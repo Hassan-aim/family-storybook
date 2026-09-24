@@ -109,6 +109,18 @@ function toggleMusic() {
   }
 }
 
+// 3D Interactive Mouse Tracking
+document.addEventListener('mousemove', (e) => {
+  const container = document.getElementById('story-container');
+  if (container.style.display !== 'none' && window.innerWidth > 768) {
+    const xAxis = ((window.innerWidth / 2) - e.pageX) / 25;
+    const yAxis = ((window.innerHeight / 2) - e.pageY) / 25;
+    
+    // Dynamically shift the 3D perspective based on mouse movement
+    container.style.perspectiveOrigin = `${50 + xAxis}% ${50 + yAxis}%`;
+  }
+});
+
 // Particle System
 function initParticles() {
   const particleContainers = document.querySelectorAll('.particles-bg, #particles');
