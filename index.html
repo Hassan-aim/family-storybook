@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>N. Sai Bhargavi — A Tribute to My Parents ❤️</title>
+  <meta name="description" content="A story of love, sacrifice, family, and dreams.">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Audio Element -->
+  <audio id="bg-music" loop>
+    <!-- Add your background music source here later -->
+    <!-- <source src="assets/audio/music.mp3" type="audio/mpeg"> -->
+  </audio>
+  <button id="music-btn" onclick="toggleMusic()" aria-label="Toggle Music">♫</button>
+
+  <!-- LANDING PAGE -->
+  <div id="landing">
+    <div class="landing-bg">
+      <img src="landing page pic.jpeg" alt="Landing Background">
+      <div class="landing-overlay"></div>
+    </div>
+    <div class="particles-bg"></div>
+    <div class="landing-content">
+      <h1>I AM SAI BHARGAVI</h1>
+      <p class="subtitle">This is dedicated to my parents.</p>
+      <p class="emotional-text">A story of love, sacrifice, dreams, and the family they built together.</p>
+      <p class="ask">Are you interested to see our story?</p>
+      <button class="hb-button hb-main" onclick="startStory()">❤️ HB ❤️</button>
+    </div>
+  </div>
+
+  <!-- STORY BOOK CONTAINER -->
+  <div id="story-container" style="display: none;">
+    <div id="particles"></div>
+    
+    <div class="book">
+      
+      <!-- LEAF 0: Cover -->
+      <div class="leaf">
+        <div class="page-front cover-page">
+          <div class="cover-border">
+            <h1 class="book-title">Our Story</h1>
+            <h2 class="book-subtitle">A Tribute to Mom & Dad</h2>
+            <div class="cover-heart">❤️</div>
+            <h3 class="author">By N. Sai Bhargavi</h3>
+            <button class="hb-button hb-open" onclick="nextPage()">❤️ HB — Open Book ❤️</button>
+          </div>
+        </div>
+        <div class="page-back">
+          <div class="back-content inner-cover" style="padding: 0;">
+             <img src="god.jpeg" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.8;" alt="God">
+          </div>
+        </div>
+      </div>
+
+      <!-- LEAF 1: Page 1 -->
+      <div class="leaf">
+        <div class="page-front">
+          <div class="page-content">
+            <h2 class="page-title">The Two Who Started It All</h2>
+            <div class="names-heart">N. Vijayalakshmi <span class="heart-icon">❤️</span> N. Usenappa</div>
+            <p>Before we became a family, there were just two people who chose each other.</p>
+            <div class="photo-row">
+              <div class="photo-frame small"><img src="mom.jpeg" alt="Mom"></div>
+              <div class="photo-frame small"><img src="mom and dad.jpeg" alt="Mom and Dad"></div>
+            </div>
+            <p class="quote">“Every family has a beginning.<br>Ours began with two hearts choosing each other.”</p>
+            <button class="hb-button" onclick="nextPage()">❤️ HB — Continue the Story ❤️</button>
+          </div>
+        </div>
+        <div class="page-back">
+          <div class="back-content inner-cover">
+             <div class="emblem">❧</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LEAF 2: Page 2 -->
+      <div class="leaf">
+        <div class="page-front">
+          <div class="page-content">
+            <h2 class="page-title">A Love Story That Began Within Family</h2>
+            <div class="photo-frame medium" style="margin-bottom: 15px;"><img src="mom love dad.jpeg" alt="Their Love Story"></div>
+            <div class="story-text">
+              <p>My parents' story began through family relationships. My mother's parents approached my father's parents with the idea of marriage. At that time, my father rejected the proposal.</p>
+              <p>But the story did not end there. Later, my father himself came to my mother and asked her:</p>
+              <p class="highlight">“Will you marry me?”</p>
+              <p>My mother immediately replied: <br><strong>“Yes, I will marry you.”</strong></p>
+              <p>That simple "yes" became the beginning of their life together. They got married when neither of them had a job. Their journey was not easy. They started their married life with dreams but without financial security.</p>
+              <p>Later, after I was born, both of them worked hard to build a better future. My mother became a nurse. My father became an electrician. My mother's education was also supported by my father. He paid her educational fees and encouraged her to continue studying. My mother struggled through her studies, worked hard, and eventually achieved her goal of getting a job.</p>
+              <p>Their story is not simply about marriage. It is about:</p>
+              <p class="values-list">Love. Trust. Sacrifice. Support. Hard work. Growing together.</p>
+              <p>After about a year, my younger sister was born: <strong>N. Sai Pallavi</strong>. Later, my younger brother was born: <strong>N. Sai Manikanta</strong>. And their family became complete.</p>
+            </div>
+            <div class="timeline">
+              <span>Proposal</span> ➔ <span>Rejection</span> ➔ <span>A Question</span> ➔ <span>“Yes”</span> ➔ <span>Marriage</span> ➔ <span>Struggle</span> ➔ <span>Education</span> ➔ <span>Jobs</span> ➔ <span>Children</span> ➔ <span>Family</span>
+            </div>
+            <button class="hb-button" onclick="nextPage()">❤️ HB — Turn the Page ❤️</button>
+          </div>
+        </div>
+        <div class="page-back">
+          <div class="back-content">
+            <p class="large-quote italic" style="font-family: var(--font-display); color: var(--primary);">"Love. Trust. Sacrifice."</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- LEAF 3: Page 3 -->
+      <div class="leaf">
+        <div class="page-front">
+          <div class="page-content">
+            <h2 class="page-title">Their First Dream</h2>
+            <h3 class="name-display">N. SAI BHARGAVI</h3>
+            <div class="photo-frame medium" style="margin-bottom: 15px;"><img src="Sai bhargavi.jpeg" alt="Sai Bhargavi"></div>
+            <div class="story-text">
+              <p>I am <strong>Sai Bhargavi</strong>, the first child of N. Vijayalakshmi and N. Usenappa.</p>
+              <p>From childhood, my parents worked hard to give us a disciplined and independent life.</p>
+              <p>For some periods of my childhood, I stayed with my <strong>Pini and Babai</strong>, while my parents were taking care of my younger sister. Those memories became an important part of my childhood.</p>
+              <p>I completed my schooling at <strong>TSWRS</strong>.</p>
+              <p>After completing my 10th class, my father suggested that I join MPC. At that time, I chose a different path. I joined <strong>Diploma in Computer Science Engineering</strong> at <strong>BDG College</strong>.</p>
+              <p>I completed my diploma successfully with <strong class="highlight">91%</strong>.</p>
+              <p>That achievement was not mine alone. Behind it were my parents' sacrifices, their encouragement, their discipline, their financial support, and their belief in me.</p>
+              <p>Today I am continuing my education in <strong>B.Tech — Information Technology</strong> at <strong>MECS</strong>.</p>
+            </div>
+            <div class="timeline">
+              <span>Childhood</span> ➔ <span>TSWRS</span> ➔ <span>10th Class</span> ➔ <span>Diploma in CSE</span> ➔ <span>91%</span> ➔ <span>B.Tech IT</span>
+            </div>
+            <p class="quote">“Their sacrifices became the foundation of my dreams.”</p>
+            <button class="hb-button" onclick="nextPage()">❤️ HB — Continue ❤️</button>
+          </div>
+        </div>
+        <div class="page-back">
+          <div class="back-content inner-cover">
+             <div class="emblem">❧</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LEAF 4: Page 4 -->
+      <div class="leaf">
+        <div class="page-front">
+          <div class="page-content">
+            <h2 class="page-title">The Daughter Who Carries Another Dream</h2>
+            <h3 class="name-display">N. SAI PALLAVI</h3>
+            <div class="photo-frame medium" style="margin-bottom: 15px;"><img src="Sai Pallavi.jpeg" alt="Sai Pallavi"></div>
+            <div class="story-text text-center">
+              <p>Sai Pallavi is my younger sister. She also studied at <strong>TSWRS</strong>.</p>
+              <p>After completing her 10th class, she chose <strong>BiPC</strong>. Her dream is moving toward <strong>MBBS / Medicine</strong>. <span class="medical-icon">⚕️</span></p>
+              <p class="emotional-text" style="margin-top: 15px;">“She carries her own dream, but behind that dream stand the same two people who taught us to work hard and never give up.”</p>
+              <div class="traits">Caring • Determined • Responsible<br>Family-oriented • Ambitious • Hardworking</div>
+            </div>
+            <div class="timeline">
+              <span>School</span> ➔ <span>BiPC</span> ➔ <span>Medical Dream</span> ➔ <span>Future Doctor</span>
+            </div>
+            <p class="quote">“Different dreams. Same roots. Same family.”</p>
+            <button class="hb-button" onclick="nextPage()">❤️ HB — Turn the Page ❤️</button>
+          </div>
+        </div>
+        <div class="page-back">
+          <div class="back-content">
+            <p class="large-quote italic" style="font-family: var(--font-display); color: var(--primary);">"Different dreams. Same roots."</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- LEAF 5: Page 5 -->
+      <div class="leaf">
+        <div class="page-front">
+          <div class="page-content">
+            <h2 class="page-title">The Youngest Dreamer</h2>
+            <h3 class="name-display">N. SAI MANIKANTA</h3>
+            <div class="photo-frame medium" style="margin-bottom: 15px;"><img src="Sai Manikanta brother.jpeg" alt="Sai Manikanta"></div>
+            <div class="story-text text-center">
+              <p>Sai Manikanta is the youngest child in our family.</p>
+              <p>He is currently studying <strong>10th Class</strong> at <strong>Sri Sai School</strong>.</p>
+              <p>His dream is still taking shape, and his journey has only just begun.</p>
+              <div class="traits">Curious • Energetic • Playful<br>Determined • Learning • Growing</div>
+            </div>
+            <div class="timeline">
+              <span>Childhood</span> ➔ <span>School</span> ➔ <span>10th Class</span> ➔ <span>Future</span>
+            </div>
+            <p class="quote">“The youngest chapter is still being written.”</p>
+            <button class="hb-button" onclick="nextPage()">❤️ HB — Continue Our Story ❤️</button>
+          </div>
+        </div>
+        <div class="page-back">
+          <div class="back-content inner-cover">
+             <div class="emblem">❧</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LEAF 6: Page 6 -->
+      <div class="leaf">
+        <div class="page-front">
+          <div class="page-content">
+            <h2 class="page-title">Three Dreams. One Foundation.</h2>
+            <p class="subtitle">Different paths. Different dreams. One family.</p>
+            <div class="photo-frame large" style="margin-bottom: 15px;"><img src="tirupati.jpeg" alt="Family Foundation"></div>
+            <div class="three-col">
+              <div class="col">
+                <h4>N. Sai Bhargavi</h4>
+                <p>B.Tech — IT</p>
+              </div>
+              <div class="col">
+                <h4>N. Sai Pallavi</h4>
+                <p>BiPC → MBBS Dream</p>
+              </div>
+              <div class="col">
+                <h4>N. Sai Manikanta</h4>
+                <p>10th Class → Future</p>
+              </div>
+            </div>
+            <div class="story-text text-center" style="margin-top: 20px;">
+              <p>Our parents raised us with:</p>
+              <div class="traits gold">Discipline • Education • Independence • Responsibility<br>Respect • Hard work • Confidence • Family values</div>
+              <p style="margin-top: 15px;">They did not simply raise children. They prepared us to stand on our own feet.</p>
+              <p class="highlight">Everything we become will always carry a part of what they taught us.</p>
+            </div>
+            <button class="hb-button" onclick="nextPage()">❤️ HB — Our Dreams ❤️</button>
+          </div>
+        </div>
+        <div class="page-back">
+          <div class="back-content">
+             <p class="large-quote italic" style="font-family: var(--font-display); color: var(--primary);">"Everything we become will always carry a part of what they taught us."</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- LEAF 7: Page 7 -->
+      <div class="leaf">
+        <div class="page-front">
+          <div class="page-content">
+            <h2 class="page-title">The Dreams We Carry Forward</h2>
+            <div class="story-text text-center">
+              <div class="dream-item">
+                <h4>Sai Bhargavi 💻</h4>
+                <p>To complete B.Tech and build a successful career in technology.</p>
+              </div>
+              <div class="dream-item">
+                <h4>Sai Pallavi ⚕️</h4>
+                <p>To continue toward her medical dream and work hard toward MBBS.</p>
+              </div>
+              <div class="dream-item">
+                <h4>Sai Manikanta 🎓</h4>
+                <p>To complete his education and discover his own future path.</p>
+              </div>
+              <p class="emotional-text" style="margin-top: 20px;">We may choose different roads, but our destination is the same — to make our parents proud.</p>
+            </div>
+            <p class="quote large">“Their dreams gave us a beginning.<br>Now our dreams will become their happiness.”</p>
+            <button class="hb-button" onclick="nextPage()">❤️ HB — One Last Page ❤️</button>
+          </div>
+        </div>
+        <div class="page-back">
+          <div class="back-content inner-cover">
+             <div class="emblem">❧</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LEAF 8: Page 8 -->
+      <div class="leaf">
+        <div class="page-front">
+          <div class="page-content letter-page">
+            <h1 class="page-title large">To Mom & Dad, With All Our Love</h1>
+            <div class="photo-frame large" style="margin-bottom: 20px;"><img src="family pic.jpeg" alt="Family"></div>
+            <div class="letter">
+              <p>Dear Mom and Dad,</p>
+              <p>You gave us more than a home. You gave us:<br><strong>Love. Education. Discipline. Confidence. Independence. Values. Dreams.</strong></p>
+              <p>You worked when life was difficult. You sacrificed when we needed something. You supported each other when things were not easy.</p>
+              <p>You educated us. You guided us. You raised us.</p>
+              <p>And most importantly, you taught us how to stand on our own feet.</p>
+              <p>Today, we are still walking toward our dreams. But wherever our lives take us, we will always remember where our journey began.</p>
+              <p>It began with: <strong class="gold-text">N. Vijayalakshmi ❤️ N. Usenappa</strong></p>
+              <p>And their greatest story became:<br><strong>Sai Bhargavi, Sai Pallavi, Sai Manikanta</strong></p>
+              
+              <h1 class="thank-you">THANK YOU, MOM & DAD.</h1>
+              <p class="text-center">We will work hard to make you proud.<br>Your sacrifices will never be forgotten.</p>
+              
+              <p class="signature">With all our love,<br>Your children ❤️</p>
+            </div>
+            <button class="hb-button final-hb" onclick="finishStory()">❤️ HB ❤️</button>
+          </div>
+        </div>
+        <div class="page-back">
+          <div class="back-content inner-cover"></div>
+        </div>
+      </div>
+
+    </div> <!-- End Book -->
+
+    <!-- Navigation -->
+    <div class="book-nav">
+      <button onclick="prevPage()" aria-label="Previous Page">❮ Prev</button>
+      <span id="page-num">Cover</span>
+      <button onclick="nextPage()" aria-label="Next Page">Next ❯</button>
+    </div>
+  </div>
+
+  <!-- FINAL SCREEN -->
+  <div id="final-screen" style="display: none;">
+    <div class="particles-bg"></div>
+    <div class="final-content">
+      <div class="names-heart large">N. Vijayalakshmi <span class="heart-icon">❤️</span> N. Usenappa</div>
+      <p class="final-text">A story written with love.</p>
+      <p class="final-author">N. Sai Bhargavi</p>
+      <p class="final-dedication">For N. Vijayalakshmi & N. Usenappa</p>
+      <div class="glowing-heart">❤️</div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
