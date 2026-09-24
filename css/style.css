@@ -179,26 +179,34 @@ h1, h2, h3, h4, .page-title, .quote, .thank-you, .names-heart, .author, .signatu
 }
 
 .landing-content .subtitle {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   margin-bottom: 30px;
   font-style: italic;
-  opacity: 0.95;
+  opacity: 1;
   letter-spacing: 2px;
-  text-shadow: 0 4px 10px rgba(0,0,0,0.9);
+  text-shadow: 0 4px 12px rgba(0,0,0,0.9), 0 0 25px rgba(0,0,0,0.8);
   color: #fff;
+  font-weight: 600;
 }
 
 .landing-content .emotional-text {
-  font-size: 1.1rem;
-  max-width: 600px;
+  font-size: 1.3rem;
+  max-width: 650px;
   margin: 0 auto 40px auto;
-  line-height: 1.6;
+  line-height: 1.7;
+  color: #fff;
+  text-shadow: 0 3px 8px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.8);
+  font-weight: 500;
 }
 
 .landing-content .ask {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-bottom: 20px;
   font-family: var(--font-display);
+  color: #fff;
+  text-shadow: 0 3px 8px rgba(0,0,0,0.9);
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 /* --- STORY CONTAINER --- */
